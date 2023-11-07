@@ -1,38 +1,55 @@
+/* App.css */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.task input[type="checkbox"] {
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task span {
+  flex-grow: 1;
+  font-size: 1.2rem;
+}
+
+.task button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
 }
